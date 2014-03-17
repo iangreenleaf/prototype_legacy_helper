@@ -413,6 +413,8 @@ module PrototypeHelper
      javascript_tag(code)
   end
 
+  deprecate :button_to_remote, :submit_to_remote, :link_to_remote, :form_remote_tag, :remote_form_for, :evaluate_remote_response, :observe_field, :observe_form, :periodically_call_remote
+
   protected
     def build_observer(klass, name, options = {})
       if options[:with] && (options[:with] !~ /[\{=(.]/)
